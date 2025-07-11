@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بن عيسى - محفظة شخصية</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <style>
+        :root {
+            --primary-color: #8E44AD;
+            --secondary-color: #9B59B6;
+            --dark-color: #121212;
+            --darker-color: #0A0A0A;
+            --light-color: #F8F9FA;
+            --gray-color: #eeeeee; /* Lightened for better contrast on background */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-color);
+            color: #fff;
+            text-align: right; 
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 600;
+        }
+        
+        section {
+            padding: 100px 0;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            border-radius: 30px;
+            padding: 10px 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(142, 68, 173, 0.3);
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+            border-radius: 30px;
+            padding: 10px 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(142, 68, 173, 0.3);
+        }
+        
+        .section-title {
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            right: 0; 
+            bottom: -10px;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        /* Header / Navbar */
+        .navbar {
+            padding: 20px 0;
+            transition: all 0.3s ease;
+            background-color: transparent;
+        }
+        
+        .navbar.sticky {
+            background-color: rgba(10, 10, 10, 0.95);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #fff;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .navbar-brand span {
+            color: var(--primary-color);
+        }
+        
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+        
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-weight: 500;
+            padding: 8px 15px;
+            position: relative;
+            transition: all 0.3s ease;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .navbar-nav .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            right: 15px; 
+            bottom: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            width: calc(100% - 30px);
+        }
+        
+        .navbar-toggler {
+            border: none;
+            padding: 0;
+        }
+        
+        .navbar-toggler:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: url('eng/i.png') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-content {
+            min-height: 100vh;
+        }
+        
+        .hero-text h5 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: var(--gray-color);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        
+        .social-icons {
+            margin-top: 40px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            margin-left: 15px; 
+            margin-right: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .hero-shape {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            opacity: 0.05;
+            z-index: 1;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .shape2 {
+            bottom: -300px;
+            right: -200px; 
+            left: auto;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--darker-color);
+        }
+        
+        .about-image img {
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            color: #6C757D;
+        }
+        
+        .about-info {
+            margin-top: 30px;
+        }
+        
+        .info-item span {
+            font-weight: 600;
+            margin-left: 10px; 
+            margin-right: 0;
+            color: var(--primary-color);
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--dark-color);
+        }
+        
+        .service-item {
+            background-color: var(--darker-color);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(142, 68, 173, 0.1);
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .service-item:hover .service-icon {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+        
+        .service-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .service-item p {
+            color: #6C757D;
+        }
+        
+        /* Portfolio Section */
+        .portfolio {
+            background-color: var(--darker-color);
+        }
+        
+        .portfolio-filter {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .portfolio-filter li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+        
+        .portfolio-filter li a {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .portfolio-filter li a.active,
+        .portfolio-filter li a:hover {
+            background-color: var(--primary-color);
+        }
+        
+        .portfolio-item {
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        
+        .portfolio-img {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+        
+        .portfolio-img img {
+            width: 100%;
+            transition: all 0.5s ease;
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(142, 68, 173, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-item:hover .portfolio-img img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-overlay h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            transform: translateY(-20px);
+            transition: all 0.4s ease;
+            opacity: 0;
+        }
+        
+        .portfolio-overlay p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 15px;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+            opacity: 0;
+        }
+        
+        .portfolio-overlay .btn {
+            transform: scale(0);
+            transition: all 0.4s ease;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay h4,
+        .portfolio-item:hover .portfolio-overlay p {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay .btn {
+            transform: scale(1);
+        }
+        
+        /* Resume Section */
+        .resume {
+            background-color: var(--dark-color);
+        }
+        
+        .resume-item {
+            background-color: var(--darker-color);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .resume-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0; 
+            left: auto;
+            width: 3px;
+            height: 100%;
+            background-color: var(--primary-color);
+            z-index: -1;
+        }
+        
+        .resume-header {
+            margin-bottom: 15px;
+        }
+        
+        .resume-year {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: rgba(142, 68, 173, 0.1);
+            color: var(--primary-color);
+            border-radius: 30px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .resume-title {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        
+        .resume-company {
+            color: #6C757D;
+            font-style: italic;
+        }
+        
+        /* Skills Section */
+        .skills {
+            background-color: var(--darker-color);
+        }
+        
+        .skill-item {
+            margin-bottom: 30px;
+        }
+        
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .skill-name {
+            font-weight: 600;
+        }
+        
+        .skill-percent {
+            color: var(--primary-color);
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            position: relative;
+            animation: skillProgress 1.5s ease-in-out;
+        }
+        
+        @keyframes skillProgress {
+            from { width: 0; }
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--dark-color);
+        }
+        
+        .testimonial-item {
+            background-color: var(--darker-color);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            padding: 5px;
+            border: 2px solid var(--primary-color);
+        }
+        
+        .testimonial-img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: #6C757D;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-text i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-author h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .testimonial-author p {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--darker-color);
+        }
+        
+        .contact-info-item {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-info-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(142, 68, 173, 0.1);
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-item:hover .contact-info-icon {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+        
+        .contact-info-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info-text p {
+            color: #6C757D;
+        }
+        
+        .contact-form {
+            margin-top: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-control {
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            box-shadow: none;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .form-control::placeholder {
+            color: #6C757D;
+        }
+        
+        textarea.form-control {
+            height: 160px;
+            resize: none;
+            padding: 20px;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--darker-color);
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer p {
+            margin-bottom: 0;
+            color: #6C757D;
+        }
+        
+        .footer a {
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .footer a:hover {
+            color: var(--secondary-color);
+        }
+        
+        /* --- Scroll To Top Button --- (FIXED & ENHANCED) --- */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            /* Step 1: Correct RTL positioning */
+            left: 30px; 
+            right: auto;
+            /* Step 1 & 7: Sizing for desktop */
+            width: 50px;
+            height: 50px;
+            /* Step 2: Visual design with gradient and shadow */
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            box-shadow: 0 4px 20px rgba(142, 68, 173, 0.3);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            /* Step 8: Z-index layering */
+            z-index: 9999;
+            /* Step 3 & 4: Initial state for animation (hidden) */
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            /* Step 3: Premium animation transition */
+            transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                        box-shadow 0.3s ease,
+                        background 0.3s ease;
+        }
+        
+        /* Step 4: 'show' class for visibility */
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        /* Step 6: Enhanced hover and focus states */
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(142, 68, 173, 0.5);
+        }
+
+        .scroll-to-top:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 3px;
+        }
+
+        /* Step 4: 'clicked' state for press animation */
+        .scroll-to-top.clicked {
+            transform: scale(0.9);
+            transition: transform 0.1s ease;
+        }
+
+        /* Custom Modal for Portfolio Image */
+        .portfolio-modal .modal-content {
+            background-color: var(--darker-color);
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .portfolio-modal .modal-header {
+            position: relative;
+            border-bottom: none;
+            padding: 15px;
+        }
+        .portfolio-modal .modal-title {
+            color: #fff;
+        }
+        .portfolio-modal .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: #fff;
+            opacity: 1;
+            font-size: 1.5rem;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        .portfolio-modal .close span {
+            line-height: 1;
+        }
+        .portfolio-modal .modal-body {
+            padding: 15px;
+            text-align: center;
+        }
+        .portfolio-modal .modal-body img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Custom Message Box for Contact Form */
+        #contactMessage {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 500;
+            display: none;
+        }
+        #contactMessage.success {
+            background-color: #28a745;
+            color: #fff;
+        }
+        #contactMessage.error {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        
+        /* --- Responsive Styles --- */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                background-color: rgba(10, 10, 10, 0.95);
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            
+            .navbar-nav .nav-item {
+                margin: 10px 0;
+            }
+
+            .hero-content {
+                justify-content: center !important;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero-text p {
+                font-size: 1rem;
+            }
+
+            /* Step 7: Tablet size for scroll-to-top button */
+            .scroll-to-top {
+                width: 45px;
+                height: 45px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            section {
+                padding: 80px 15px;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.2rem;
+                line-height: 1.3;
+            }
+            
+            .about-image {
+                margin-bottom: 30px;
+            }
+
+            .hero .hero-content {
+                 justify-content: center;
+                 text-align: center;
+            }
+            .hero .hero-text {
+                text-align: center;
+            }
+
+            .hero-buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .hero-buttons .btn {
+                width: 90%;
+                max-width: 320px;
+                margin: 0 !important;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+
+            /* Step 7: Mobile size and positioning for scroll-to-top button */
+            .scroll-to-top {
+                width: 40px;
+                height: 40px;
+                left: 20px;
+                bottom: 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Step 10: Added ARIA attributes for accessibility -->
+    <div class="scroll-to-top" role="button" aria-label="العودة إلى الأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">بن عيسى<span>.</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">تعرّف علي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">الخدمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">الأعمال</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">السيرة الذاتية</a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="#testimonials">الشهادات</a>
+                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">اتصل بي</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center justify-content-lg-end hero-content">
+                <div class="col-lg-7 col-md-10">
+                    <div class="hero-text" data-aos="fade-left" data-aos-duration="1000">
+                        <h5>مرحباً، أنا</h5>
+                        <h1>بن عيسى رابح حسان</h1>
+                        <p>معلم ومطور مناهج شغوف مقيم في الجزائر، متخصص في إنشاء المناهج <br> التعليمية والتدريبية للأطفال والمعلمين في مجال البرمجة. </p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-primary ml-3">مشاهدة أعمالي</a>
+                            <a href="#contact" class="btn btn-outline-primary">اتصل بي</a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="mailto:rhbenaissa@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.researchgate.net/profile/Rabah-Benaissa-2" target="_blank"><i class="fab fa-researchgate"></i></a>
+                            <a href="https://t.me/Hacenb"><i class="fab fa-telegram"></i></a>
+                    
+                            <!--<a href="https://www.researchgate.net/profile/YourName" target="_blank" style="
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:48px;
+  height:48px;
+  background:none;
+  color:none;
+  border-radius:100%;
+  text-decoration:#ffffff00;
+  font-size:40px;
+">
+  <i class="fab fa-researchgate"></i>
+</a>-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>تعرّف علي</h2>
+                        <p>تعرف عليّ بشكل أفضل</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-image">
+                        <img src="eng/d4.png" alt="تعرّف علي" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-text">
+                        <h3>أنا معلم ومطور مناهج</h3>
+                        <p>أمتلك خبرة تفوق سنتين في تصميم وإعداد برامج تعليمية موجهة للأطفال في مجال البرمجة. أُعنى بإنتاج محتوى تربوي تفاعلي يسهم في تبسيط المفاهيم التقنية وتقديمها بأسلوب يُراعي احتياجات الفئات المستهدفة.</p>
+                        <p>أعتمد في عملي على أساليب تعليمية ممتعة تهدف إلى جعل التعلم تجربة فعالة، مع التركيز على تنمية التفكير المنطقي والمهارات العملية. أؤمن بأن التعليم الجيد يبدأ من تصميم محتوى مناسب يلبي احتياجات المتعلم ويواكب تطورات العصر.</p>
+                        <div class="about-info">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <span>الاسم:</span> بن عيسى رابح حسان
+                                    </div>
+                                    <div class="info-item">
+                                        <span>الإيمايل:</span> rhbenaissa@gmail.com
+                                    </div>
+                                    <div class="info-item">
+                                        <span>الهاتف:</span> 0558267335
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <span>العمر:</span> 29
+                                    </div>
+                                    <div class="info-item">
+                                        <span>من:</span> البليدة، الجزائر
+                                    </div>
+                                    <div class="info-item">
+                                        <span>عمل حر:</span> متاح
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1Mjw6x_NglI2b2b2oDaKkGCeLcWqpzMQB/view?usp=sharing" class="btn btn-primary mt-4">تحميل السيرة الذاتية</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>خدماتي</h2>
+                        <p>ما يمكنني فعله لك</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4>التدريس</h4>
+                        <p>أقدم محتوى تعليمي مبسط، مع التركيز على إيصال المفاهيم بشكل واضح. أسعى إلى توفير تجربة تعليمية مشوقة تُسهم في ترسيخ الفهم وتسهيل التعلم للطلاب.</p>
+                    </div>
+                </div>        
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h4>تطوير المناهج</h4>
+                        <p>أعمل على إعداد مناهج تعليمية تناسب مختلف الأعمار، أركّز فيها على ترتيب المحتوى بشكل منطقي، واستخدام أمثلة وأنشطة تساعد المتعلمين على الفهم والتطبيق.                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4>التصميم الجرافيكي</h4>
+                        <p>أستخدم التصميم الجرافيكي لصنع مواد تعليمية جذابة، مثل العروض التقديمية والكتب، لتسهيل الشرح وجعل المحتوى أكثر تشويقًا ووضوحًا.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>أعمالي</h2>
+                        <p>أحدث أعمالي</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="portfolio-filter" data-aos="fade-up">
+                        <li><a href="#" class="active" data-filter="*">الكل</a></li>
+                        <li><a href="#" data-filter=".web">تصميم المناهج</a></li>
+                        <li><a href="#" data-filter=".app">تصميم المنشورات</a></li>
+                        <li><a href="#" data-filter=".brand">الذكاء الاصطناعي التوليدي</a></li>
+                        <!--<li><a href="#" data-filter=".photo">التصوير الفوتوغرافي</a></li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 portfolio-item web" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="portfolio-img">
+                        <img src="eng/a.png" alt="عنصر المحفظة 1">
+                        <div class="portfolio-overlay">
+                            <h4>تصميم المناهج الدراسية</h4>
+                            <p>مناهج تفاعلية</p>
+                            <a href="#" class="btn btn-sm btn-light view-portfolio-item" data-toggle="modal" data-target="#portfolioModal">عرض الصورة</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item app" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="portfolio-img">
+                        <img src="eng/b.png" alt="عنصر المحفظة 2">
+                        <div class="portfolio-overlay">
+                            <h4>تصميم المنشورات</h4>
+                            <p>منشورات وسائل التواصل الاجتماعي</p>
+                            <a href="#" class="btn btn-sm btn-light view-portfolio-item" data-toggle="modal" data-target="#portfolioModal">عرض الصورة</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item brand" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="portfolio-img">
+                        <img src="eng/0.png" alt="عنصر المحفظة 3">
+                        <div class="portfolio-overlay">
+                            <h4>توليد الصور بالذكاء الاصطناعي</h4>
+                            <p>المنشورات، عرض المنتجات</p>
+                            <a href="#" class="btn btn-sm btn-light view-portfolio-item" data-toggle="modal" data-target="#portfolioModal">عرض الصورة</a>
+                        </div>
+                    </div>
+                </div>
+               <!-- <div class="col-lg-4 col-md-6 portfolio-item photo" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="portfolio-img">
+                        <img src="a1.png" alt="عنصر المحفظة 4">
+                        <div class="portfolio-overlay">
+                            <h4>تصوير المنتجات</h4>
+                            <p>تصوير فوتوغرافي</p>
+                            <a href="#" class="btn btn-sm btn-light view-portfolio-item" data-toggle="modal" data-target="#portfolioModal">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item web" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="portfolio-img">
+                        <img src="a1.png" alt="عنصر المحفظة 5">
+                        <div class="portfolio-overlay">
+                            <h4>موقع تجارة إلكترونية</h4>
+                            <p>تصميم ويب، تطوير</p>
+                            <a href="#" class="btn btn-sm btn-light view-portfolio-item" data-toggle="modal" data-target="#portfolioModal">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item app" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="portfolio-img">
+                        <img src="a1.png" alt="عنصر المحفظة 6">
+                        <div class="portfolio-overlay">
+                            <h4>واجهة مستخدم تطبيق لياقة بدنية</h4>
+                            <p>تصميم تطبيقات، UI/UX</p>
+                            <a href="#" class="btn btn-sm btn-light view-portfolio-item" data-toggle="modal" data-target="#portfolioModal">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>سيرتي الذاتية</h2>
+                        <p>التعليم والخبرة</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <h3 class="mb-4">التعليم</h3>
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <span class="resume-year">2019 - 2021</span>
+                            <h4 class="resume-title">درجة الماجستير في الفيزياء النظرية</h4>
+                            <p class="resume-company">جامعة سعد دحلب البليدة 1</p>
+                        </div>
+                        <p>أكملت مرحلة الماجستير بدرجة التميّز لمشروعي البحثي</p>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <span class="resume-year">2015 - 2019</span>
+                            <h4 class="resume-title">درجة البكالوريوس في الفيزياء النظرية</h4>
+                            <p class="resume-company">جامعة سعد دحلب البليدة 1</p>
+                        </div>
+                        <p>تخرجت بالمرتبة الأولى في تخصص الفيزياء النظرية</p>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <span class="resume-year">2022</span>
+                            <h4 class="resume-title">دورة برمجة بايثون</h4>
+                            <p class="resume-company">جامعة EdYoda الرقمية</p>
+                        </div>
+                        <p>تعلمت لغة البرمجة بايثون من المفاهيم الأساسية إلى المتقدمة</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <h3 class="mb-4">الخبرة</h3>
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <span class="resume-year">2023 - حالي</span>
+                            <h4 class="resume-title">مطور المناهج</h4>
+                            <p class="resume-company">Doc Services</p>
+                        </div>
+                        <p>تصميم مناهج عصرية وتأليف كتب المناهج ودليل المعلم وتدريب المدربين</p>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <span class="resume-year">2022 - 2023</span>
+                            <h4 class="resume-title">مكوّن وموظف في الإدراة</h4>
+                            <p class="resume-company">Indata</p>
+                        </div>
+                        <p>استقبال العملاء حضوريا وعبر الخط وتقديم تكوينات</p>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <span class="resume-year">2022</span>
+                            <h4 class="resume-title">مدرس خصوصية في مادة الرياضيات والفيزياء</h4>
+                            <p class="resume-company">المنزل</p>
+                        </div>
+                        <p>تدريس الرياضيات والفيزياء لطلاب الطور المتوسط</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>مهاراتي</h2>
+                        <p>ما أجيده</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Canva</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Google Docs & Slides</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Scratch</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <!--<div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Bootstrap</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>-->
+                </div>
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">LaTeX</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Gen AI</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <!--<div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">فوتوشوب</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--<section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>الشهادات</h2>
+                        <p>ما يقوله العملاء</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="a1.png" alt="العميل 1">
+                            </div>
+                            <div class="testimonial-text">
+                                <i class="fas fa-quote-left"></i>
+                                <p>جون مصمم استثنائي يفهم حقًا احتياجات المستخدم. لقد أنشأ موقعًا إلكترونيًا لعملنا لا يبدو جميلًا فحسب، بل يعمل أيضًا بشكل جيد للغاية. موصى به للغاية!</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>سارة جونسون</h4>
+                                <p>الرئيس التنفيذي، تيك ستارت</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="a1.png" alt="العميل 2">
+                            </div>
+                            <div class="testimonial-text">
+                                <i class="fas fa-quote-left"></i>
+                                <p>كان العمل مع جون متعة من البداية إلى النهاية. لقد أخذ أفكارنا الغامضة وحولها إلى موقع ويب مذهل يمثل علامتنا التجارية بشكل مثالي. اهتمامه بالتفاصيل مثير للإعجاب.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>مايكل براون</h4>
+                                <p>مدير التسويق، إنوفيت إنك.</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-img">
+                                <img src="a1.png" alt="العميل 3">
+                            </div>
+                            <div class="testimonial-text">
+                                <i class="fas fa-quote-left"></i>
+                                <p>أعاد جون تصميم موقع التجارة الإلكترونية الخاص بنا، وزادت معدلات التحويل لدينا بنسبة 40% خلال الشهر الأول. فهمه لسلوك المستخدم وتحسين التحويل رائع حقًا.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>إميلي ويلسون</h4>
+                                <p>مالكة، بوتيك الأزياء</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center" data-aos="fade-up">
+                        <h2>اتصل بي</h2>
+                        <p>تواصل معي</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h4>الموقع</h4>
+                            <p>البليدة، الجزائر</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h4>البريد الإلكتروني</h4>
+                            <p>rhbenaissa@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h4>الهاتف</h4>
+                            <p>213558267335+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" placeholder="اسمك" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="بريدك الإلكتروني" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" placeholder="الموضوع" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" placeholder="رسالتك" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                            </div>
+                        </div>
+                        <div id="contactMessage" class="mt-3"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy; 2025 بن عيسى. جميع الحقوق محفوظة | صمم بواسطة <a href="#">تقنيات العصر الحديث</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade portfolio-modal" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalPortfolioImage" src="" alt="Portfolio Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Preloader
+            $(window).on('load', function() {
+                $('#preloader').fadeOut('slow');
+            });
+            
+            // Initialize AOS
+            AOS.init({
+                once: true // Animation happens only once
+            });
+
+            // --- Step 5 & 9: Throttling function for performance optimization ---
+            function throttle(func, limit) {
+                let inThrottle;
+                return function() {
+                    const args = arguments;
+                    const context = this;
+                    if (!inThrottle) {
+                        func.apply(context, args);
+                        inThrottle = true;
+                        setTimeout(() => inThrottle = false, limit);
+                    }
+                }
+            }
+            
+            // --- Combined and throttled scroll handler ---
+            const handleScroll = () => {
+                const scrollTop = $(window).scrollTop();
+                
+                // Sticky Navbar Logic
+                if (scrollTop > 50) {
+                    $('.navbar').addClass('sticky');
+                } else {
+                    $('.navbar').removeClass('sticky');
+                }
+
+                // Step 5: Scroll-to-top button visibility logic (trigger at 200px)
+                if (scrollTop > 200) {
+                    // Step 4: Use '.show' class instead of '.active'
+                    $('.scroll-to-top').addClass('show');
+                } else {
+                    $('.scroll-to-top').removeClass('show');
+                }
+
+                // Active nav link on scroll logic
+                const scrollDistance = scrollTop + 100;
+                $('.navbar-nav .nav-link').each(function() {
+                    const link = $(this);
+                    const targetId = link.attr('href');
+                    if (targetId.startsWith('#') && $(targetId).length) {
+                        const targetSection = $(targetId);
+                        if (targetSection.offset().top <= scrollDistance && 
+                            (targetSection.offset().top + targetSection.outerHeight()) > scrollDistance) {
+                            $('.navbar-nav .nav-link').removeClass('active');
+                            link.addClass('active');
+                        }
+                    }
+                });
+            };
+
+            // Apply the throttled handler to the scroll event
+            $(window).scroll(throttle(handleScroll, 100));
+            
+            // Smooth scrolling for navigation and scroll-to-top
+            $('a.nav-link, .scroll-to-top').on('click', function(e) {
+                if (this.hash !== '' || $(this).hasClass('scroll-to-top')) {
+                    e.preventDefault();
+                    let target = this.hash;
+                    if ($(this).hasClass('scroll-to-top')) {
+                        target = '#home'; // Or simply scrollTop: 0
+                    }
+                    
+                    const scrollTopValue = (target === '#home') ? 0 : $(target).offset().top - 80;
+
+                    $('html, body').animate({
+                        scrollTop: scrollTopValue
+                    }, 800, 'swing'); // Using swing easing for a natural feel
+                }
+            });
+            
+            // Testimonial Carousel
+            $('.testimonial-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                rtl: true,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    992: { items: 3 }
+                }
+            });
+            
+            // Portfolio isotope and filter
+            var portfolioIsotope = $('.portfolio-container').isotope({
+                itemSelector: '.portfolio-item',
+                layoutMode: 'fitRows',
+                originLeft: false
+            });
+            
+            $('.portfolio-filter li a').on('click', function(e) {
+                e.preventDefault();
+                $('.portfolio-filter li a').removeClass('active');
+                $(this).addClass('active');
+                portfolioIsotope.isotope({ filter: $(this).data('filter') });
+            });
+
+            // Portfolio image view mode
+            $('.view-portfolio-item').on('click', function() {
+                const imageUrl = $(this).closest('.portfolio-item').find('.portfolio-img img').attr('src');
+                $('#modalPortfolioImage').attr('src', imageUrl);
+            });
+            
+            // --- Scroll to top button enhancements ---
+            const scrollToTopBtn = $('.scroll-to-top');
+
+            // Step 4: Add '.clicked' class for press animation
+            scrollToTopBtn.on('mousedown', function() {
+                $(this).addClass('clicked');
+            }).on('mouseup mouseleave', function() {
+                $(this).removeClass('clicked');
+            });
+            
+            // Form submission
+            $('.contact-form').on('submit', function(e) {
+                e.preventDefault();
+                const contactMessage = $('#contactMessage');
+                contactMessage.removeClass('success error').hide();
+                setTimeout(() => {
+                    contactMessage.addClass('success').text('تم إرسال رسالتك بنجاح! (هذه نسخة تجريبية)').show();
+                    $('.contact-form')[0].reset();
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
+
